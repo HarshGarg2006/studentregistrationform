@@ -5,7 +5,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
                 echo 'Code fetched from GitHub'
             }
         }
@@ -22,7 +21,7 @@ pipeline {
             echo 'All tests passed!'
         }
         failure {
-            echo 'Tests failed. Check the console output.'
+            echo 'Tests failed. Check console output.'
         }
     }
 }
