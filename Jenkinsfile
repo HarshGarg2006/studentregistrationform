@@ -12,7 +12,7 @@ pipeline {
 
         stage('Automated Tests') {
             steps {
-                bat 'python -m unittest test_form.py -v'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m unittest test_form.py -v'
             }
         }
     }
